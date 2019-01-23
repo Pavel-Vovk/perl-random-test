@@ -1,6 +1,7 @@
 use strict;
-use Test::More tests => 6;
 use XML::Simple;
+use Test::More tests => 6;
+
 
 ok 1, 'Always passing';
 ok 2, 'Always passing 2';
