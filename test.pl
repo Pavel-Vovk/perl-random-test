@@ -1,6 +1,5 @@
 use strict;
-use Test::Unit::Runner::XML;
-use Test::More tests => 5;
+use Test::More tests => 6;
 
 ok 1, 'Always passing';
 ok 2, 'Always passing 2';
@@ -8,9 +7,5 @@ ok 2, 'Always passing 2';
 ok 1, 'Always passing';
 ok 2, 'Always passing 2';
 my $rand = int rand(2);
-ok $rand, 'Random failing';
-ok $rand, 'Random failing';
-mkdir("test_reports");
-my $runner = Test::Unit::Runner::XML->new("test-reports");
-$runner->start($test);
-exit(!$runner->all_tests_passed());
+ok $rand, "Random failing $rand";
+ok $rand, "Random failing $rand";
