@@ -1,5 +1,4 @@
 use strict;
-use XML::Simple;
 use Test::More tests => 6;
 
 
@@ -11,6 +10,3 @@ ok 2, 'Always passing 2';
 my $rand = int rand(3)-1;
 ok $rand, "Random failing $rand";
 ok $rand, "Random failing $rand";
-$xml = XMLin("pre.xml");
-$xml->{core}->{test} = 'testeroo';
-$res = XMLout($xml);
