@@ -1,7 +1,6 @@
 use strict;
 use Test::More tests => 6;
 
-
 ok 1, 'Always passing';
 ok 2, 'Always passing 2';
 #ok 0, "Always failing";
