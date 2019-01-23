@@ -1,5 +1,5 @@
 # perl-random-test
-Very small perl script for the Tests on Perl
+Very small perl script for the collet Tests report like JUnit on Perl
 # Jenkins conf
 connet to Jenkins machine by ssh
 
